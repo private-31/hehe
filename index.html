@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reshuu❤</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+            background-color: #F8C8DC;
+        }
+        .container{
+            width: 350px;
+            border-radius: 1rem;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            color: #ffffff;
+            font-weight: bolder;
+        }
+        .buttons{
+            display: flex;
+            justify-content: space-around;
+            width: 50%;
+            margin-top: 30px;
+        }
+        button{
+            background-color: #FFB6C1;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            cursor: pointer;
+            border: none;
+            height: 3rem;
+            width: 5rem;
+            border-radius: 12px;
+            font-size: 16px;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Reshu❤?</h1>
+        <div class="buttons">
+            <button class="yes-button" onclick="nextPage()">Yes</button>
+            <button class="no-button" onclick="shutup()">No</button>
+        </div>
+    </div>
+    <!-- <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3RtM2pkaGVsYm5zaTU0OXZqdTVxMHViMjhmeXE2MWhwanVwZ3JkaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5dUllWbKVlaqmMTvHb/giphy.gif" alt=""> -->
+     <script>
+        function nextPage() {
+            window.location.href = "index2.html";
+        }
+        function shutup(){
+            let container = document.querySelector(".container");
+            container.innerHTML = `
+                <h1>Yes dabavo madam jiii❤</h1>
+                <div class="buttons">
+                <button class="yes-button" onclick="nextPage()">Yes</button>
+                <button class="no-button" onclick="shutup()">No</button>
+                </div>
+            `
+        }
+     </script>
+</body>
+</html>
